@@ -1,0 +1,119 @@
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Benjamin}{Mugnier}
+\title{Ingénieur stagiaire}                               % optional, remove / comment the line if not wanted
+\address{18 rue Alphonse Allais}{38400}{Saint Martin d'Hères}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+33~(0)6~16~50~70~75}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{mugnier.benjamin@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.donotddos.net}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{Benjamin Mugnier}                        % optional, remove / comment the line if not wanted
+\social[twitter]{@totallyNotBemug}                             % optional, remove / comment the line if not wanted
+\social[github]{github.com/bemug}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Etudes}
+\cventry{2012--2015}{Elève ingénieur}{ENSIMAG}{Grenoble}{}{Ecole Nationale
+	Supérieure d'Infomartique et de Mathématiques Appliquées de Grenoble}  % arguments 3 to 6 can be left empty
+\cventry{2010--2012}{DUT Informatique}{IUT d'Annecy}{Annecy-Le-Vieux}{}{}
+
+\section{Experience}
+\subsection{Informatique}
+\cventry{2014 (3 mois)}{Ingénieur stagiaire}{ST
+	Microelectronics}{Crôlles}{Fabricant de semi-conducteurs}
+	{GreenNet : Capteurs énergétiquement autonomes dialoguant avec Internet
+		(IoT)
+	\begin{itemize}
+		\item Développement d'un protocol permettant l'initialisation réseau des
+			capteurs
+		\item Permettre le relevé d'information sur l'état des noeuds routeurs
+		\item Amélioration du SDK développeur
+	\end{itemize}
+	}
+\cventry{2012 (6 mois)}{Programmeur}{Laboratoire
+	LISTIC}{Annecy-Le-Vieux}{Laboratoire de recherches en informatique}
+	{Listic Demonstrator, interface web permettant aux chercheurs de stocker des
+	données satellitaires
+	\begin{itemize}
+		\item Permettre à l'utilisateur de charger des images satellitaires sur
+			le serveur
+		\item Sauvegarder sa méta-information dans une base de données
+		\item Effectuer des traitements divers sur les images selon une chaîne
+			d'opération markovienne
+		\item Sécuriser le serveur
+	\end{itemize}
+	}
+\cventry{2012 (6 mois)}{Programmeur chef de projet}{Laboratoire
+	LISTIC}{Annecy-Le-Vieux}{Laboratoire de recherches en informatique}
+	{JKDTT : Gestionnaire d'ontologies pour le modèle Knowledge Dependant Type
+		Theory
+	\begin{itemize}
+		\item Charger des ontologies sous leur format propre (OWL)
+		\item Afficher l'ontologie sous forme de graphe
+		\item Permettre à l'utilisateur de modifier éléments et liens de
+			l'ontologie
+		\item Sauvegarder l'ontologie dans un fichier, le cloud, ou en imprimer
+			un résumé
+	\end{itemize}
+	}
+\subsection{Divers}
+\cventry{Etés 2012 et 2013}{Jardinier}{Albanais Home Services}{Moye}{}{Petits
+	travaux et aide à la personne}
+
+\section{Compétences}
+\cvitem{Scripting}{Ada, Bash, Vim script, Source Engine, Python 3}
+\cvitem{Objet}{Java, C++, .net Framework, AS 3.0, UML}
+\cvitem{Bas niveau}{C, ASM (x86, x86\_64, MIPS), VHDL}
+\cvitem{Web}{PHP (4/5), Javascript, JQuery, Ajax, Yii Framework, Bootstrap}
+\cvitem{SGBD}{SQL (Oracle, PostGres, MySQL), Modèles relationnel (UML, Merise)}
+\cvitem{Utilitaires}{Microsoft Office, LaTeX, Git, SVN}
+\cvitem{Design}{Photoshop, Flash, Premiere, After Effects}
+
+\section{Languages}
+\cvitem{Anglais}{Lu parlé écrit (TOEIC 950)}
+\cvitem{Italien}{Intermédiaire}
+
+\section{Centre d'intérets}
+\cvitem{Musique}{Guitare}
+\cvitem{Programmation}{Développement amateur et aide sur StackExchange}
+
+\end{document}
+
