@@ -19,13 +19,13 @@
 
 % personal data
 \name{Benjamin}{Mugnier}
-\title{Ingénieur stagiaire}                               % optional, remove / comment the line if not wanted
+\title{Ingénieur informatique}                               % optional, remove / comment the line if not wanted
 \address{18 rue Alphonse Allais}{38400}{Saint Martin d'Hères}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+33~(0)6~16~50~70~75}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 %\phone[fixed]{+2~(345)~678~901}
 %\phone[fax]{+3~(456)~789~012}
 \email{mugnier.benjamin@gmail.com}                               % optional, remove / comment the line if not wanted
-\homepage{www.donotddos.net}                         % optional, remove / comment the line if not wanted
+\homepage{bemug.github.io}                         % optional, remove / comment the line if not wanted
 \social[linkedin]{Benjamin Mugnier}                        % optional, remove / comment the line if not wanted
 \social[twitter]{@totallyNotBemug}                             % optional, remove / comment the line if not wanted
 \social[github]{github.com/bemug}                              % optional, remove / comment the line if not wanted
@@ -48,21 +48,38 @@
 \begin{document}
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
+\vspace*{-1.3cm}
 \makecvtitle
+
+%Too much space over there
+\vspace*{-2cm}
 
 \section{Etudes}
 \cventry{2012--2015}{Elève ingénieur}{ENSIMAG}{Grenoble}{}{Ecole Nationale
-	Supérieure d'Infomartique et de Mathématiques Appliquées de Grenoble}  % arguments 3 to 6 can be left empty
+	Supérieure d'Informatique et de Mathématiques Appliquées de Grenoble}  % arguments 3 to 6 can be left empty
 \cventry{2010--2012}{DUT Informatique}{IUT d'Annecy}{Annecy-Le-Vieux}{}{}
 
-\section{Experience}
+\section{Expérience}
 \subsection{Informatique}
+\cventry{2015 (6 mois)}{Ingénieur
+	stagiaire}{Kalray}{Montbonnot-Saint-Martin}{Développement de supercalculateurs sur puces}
+	{Implémentation du standard Unix Device Tree (description du hardware) dans les outils Kalray
+	\begin{itemize}
+		\item Développement d'une bibliothèque permettant de manipuler le device
+			tree de façon transparente pour l'utilisateur
+		\item Adaptation du bootloader pour précharger le device tree dans la
+			mémoire interne
+		\item Modification des drivers PCIe/JTAG pour charger à la volée le
+			device tree
+		\item Modification du simulateur pour émuler la lecture de device tree
+	\end{itemize}
+	}
 \cventry{2014 (3 mois)}{Ingénieur stagiaire}{ST
 	Microelectronics}{Crôlles}{Fabricant de semi-conducteurs}
-	{GreenNet : Capteurs énergétiquement autonomes dialoguant avec Internet
+	{GreenNet : Capteurs énergétiquement autonomes dialoguant avec internet
 		(IoT)
 	\begin{itemize}
-		\item Développement d'un protocol permettant l'initialisation réseau des
+		\item Développement d'un protocole permettant l'initialisation réseau des
 			capteurs
 		\item Permettre le relevé d'information sur l'état des noeuds routeurs
 		\item Amélioration du SDK développeur
@@ -70,7 +87,7 @@
 	}
 \cventry{2012 (6 mois)}{Programmeur}{Laboratoire
 	LISTIC}{Annecy-Le-Vieux}{Laboratoire de recherches en informatique}
-	{Listic Demonstrator, interface web permettant aux chercheurs de stocker des
+	{Listic Demonstrator : Interface web permettant aux chercheurs de stocker des
 	données satellitaires
 	\begin{itemize}
 		\item Permettre à l'utilisateur de charger des images satellitaires sur
@@ -99,12 +116,13 @@
 	travaux et aide à la personne}
 
 \section{Compétences}
-\cvitem{Scripting}{Ada, Bash, Vim script, Source Engine, Python 3}
-\cvitem{Objet}{Java, C++, .net Framework, AS 3.0, UML}
-\cvitem{Bas niveau}{C, ASM (x86, x86\_64, MIPS), VHDL}
+\cvitem{Scripting}{Ada, Bash, Vim script, Source Engine, Python 3, Ruby}
+\cvitem{Objet}{Java, C++, C\#, VB.net, AS 3.0, UML, notions d'IA}
+\cvitem{Bas niveau}{C, ASM (x86, x86\_64, MIPS), VHDL, PCIE, JTAG, Drivers
+	Linux, Linker, notions d'émulation}
 \cvitem{Web}{PHP (4/5), Javascript, JQuery, Ajax, Yii Framework, Bootstrap}
 \cvitem{SGBD}{SQL (Oracle, PostGres, MySQL), Modèles relationnel (UML, Merise)}
-\cvitem{Utilitaires}{Microsoft Office, LaTeX, Git, SVN}
+\cvitem{Utilitaires}{Git, SVN, Make, CMake, LaTex, Microsoft Office}
 \cvitem{Design}{Photoshop, Flash, Premiere, After Effects}
 
 \section{Languages}
@@ -113,7 +131,9 @@
 
 \section{Centre d'intérets}
 \cvitem{Musique}{Guitare}
-\cvitem{Programmation}{Développement amateur et aide sur StackExchange}
+\cvitem{Programmation}{Développement de jeux vidéo amateurs et d'applications
+	open source}
+\cvitem{Loisirs}{Jeux vidéo}
 
 \end{document}
 
