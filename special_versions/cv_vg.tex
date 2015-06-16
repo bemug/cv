@@ -19,13 +19,13 @@
 
 % personal data
 \name{Benjamin}{Mugnier}
-\title{Ingénieur stagiaire}                               % optional, remove / comment the line if not wanted
+\title{}                               % optional, remove / comment the line if not wanted
 \address{25 Impasse Chez Tounin}{74150}{Moye}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+33~(0)6~16~50~70~75}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 %\phone[fixed]{+2~(345)~678~901}
 %\phone[fax]{+3~(456)~789~012}
 \email{mugnier.benjamin@gmail.com}                               % optional, remove / comment the line if not wanted
-\homepage{www.donotddos.net}                         % optional, remove / comment the line if not wanted
+\homepage{bemug.github.io}                         % optional, remove / comment the line if not wanted
 \social[linkedin]{Benjamin Mugnier}                        % optional, remove / comment the line if not wanted
 \social[twitter]{@totallyNotBemug}                             % optional, remove / comment the line if not wanted
 \social[github]{github.com/bemug}                              % optional, remove / comment the line if not wanted
@@ -38,6 +38,7 @@
 %\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
 %\makeatother
 %\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+\renewcommand*{\namefont}{\fontsize{32}{34}\mdseries\upshape}
 
 % bibliography with mutiple entries
 %\usepackage{multibib}
@@ -48,6 +49,7 @@
 \begin{document}
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
+\vspace*{-1.3cm}
 \makecvtitle
 
 %Too much space over there
@@ -58,8 +60,21 @@
 	Supérieure d'Informatique et de Mathématiques Appliquées de Grenoble}  % arguments 3 to 6 can be left empty
 \cventry{2010--2012}{DUT Informatique}{IUT d'Annecy}{Annecy-Le-Vieux}{}{}
 
-\section{Experience}
+\section{Expérience}
 \subsection{Informatique}
+\cventry{2015 (6 mois)}{Ingénieur
+ 	stagiaire}{Kalray}{Montbonnot-Saint-Martin}{Développement de supercalculateurs sur puces}
+ 	{Implémentation du standard Unix Device Tree (description du hardware) dans les outils Kalray
+ 	\begin{itemize}
+ 		\item Développement d'une bibliothèque permettant de manipuler le device
+ 			tree de façon transparente pour l'utilisateur
+ 		\item Adaptation du bootloader pour précharger le device tree dans la
+ 			mémoire interne
+ 		\item Modification des drivers PCIe/JTAG pour charger à la volée le
+ 			device tree
+ 		\item Modification du simulateur pour émuler la lecture de device tree
+ 	\end{itemize}
+ 	}
 \cventry{2014 (3 mois)}{Ingénieur stagiaire}{ST
 	Microelectronics}{Crôlles}{Fabricant de semi-conducteurs}
 	{GreenNet : Capteurs énergétiquement autonomes dialoguant avec Internet
@@ -73,7 +88,7 @@
 	}
 \cventry{2012 (6 mois)}{Programmeur}{Laboratoire
 	LISTIC}{Annecy-Le-Vieux}{Laboratoire de recherches en informatique}
-	{Listic Demonstrator, interface web permettant aux chercheurs de stocker des
+	{Listic Demonstrator : interface web permettant aux chercheurs de stocker des
 	données satellitaires
 	\begin{itemize}
 		\item Permettre à l'utilisateur de charger des images satellitaires sur
@@ -102,15 +117,15 @@
 	travaux et aide à la personne}
 
 \section{Compétences}
-\cvitem{Bas niveau}{C, ASM (x86, x86\_64, MIPS), VHDL}
-\cvitem{Scripting}{Ada, Bash, Vim script, Python}
-\cvitem{Objet}{Java, C++, .net Framework, AS 3.0, UML}
+\cvitem{Scripting}{Ada, Bash, Vim script, Source Engine, Python 3, Ruby}
+\cvitem{Objet}{Java, C++, C\#, VB.net, AS 3.0, UML, notions d'IA}
+\cvitem{Bas niveau}{C, ASM (x86, x86\_64, MIPS), VHDL, PCIE, JTAG, Drivers
+	Linux, Linker, notions d'émulation}
 \cvitem{Moteurs}{Source Engine, Unity3D, Warcraft 3 editor}
 \cvitem{APIs/Libs}{SFML, SDL, OpenGL}
-\cvitem{Web}{PHP (4/5), Javascript, JQuery, Ajax, Yii Framework, Bootstrap}
 \cvitem{SGBD}{SQL (Oracle, PostGres, MySQL), Modèles relationnel (UML, Merise)}
-\cvitem{Utilitaires}{Microsoft Office, LaTeX, Git, SVN}
-\cvitem{Graphisme}{Photoshop, Flash, Premiere, After Effects}
+\cvitem{Utilitaires}{Git, SVN, Make, CMake, LaTex, Microsoft Office}
+\cvitem{Design}{3DS Max, Photoshop, Flash, Premiere, After Effects}
 
 \section{Langues}
 \cvitem{Anglais}{Lu parlé écrit (TOEIC 950)}
