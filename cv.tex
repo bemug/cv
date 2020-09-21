@@ -25,11 +25,11 @@
 %\phone[fixed]{+2~(345)~678~901}
 %\phone[fax]{+3~(456)~789~012}
 \email{mugnier.benjamin@gmail.com}                               % optional, remove / comment the line if not wanted
-\homepage{bemug.github.io}                         % optional, remove / comment the line if not wanted
+%\homepage{bemug.github.io}                         % optional, remove / comment the line if not wanted
 \social[linkedin]{benjamin-mugnier}                        % optional, remove / comment the line if not wanted
 \social[github]{bemug}                              % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-\photo[64pt][0.1pt]{img/photo_s.jpg}                       % optional, remove / comment the line if not wanted; '65pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\photo[64pt][0pt]{img/photo_s.jpg}                       % optional, remove / comment the line if not wanted; '65pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
@@ -47,32 +47,42 @@
 \begin{document}
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
-%\vspace*{-1.3cm}
+\vspace*{-1cm}
 \makecvtitle
 
 %Too much space over there
 %\vspace*{-2cm}
-\vspace*{-1.3cm}
+\vspace*{-1.5cm}
 \setlength{\hintscolumnwidth}{0.15\textwidth} %Increse date column width
 
 \section{Experiences}
 \subsection{Computer science}
-	\cventry{2015 (4 years)}{Embedded systems software engineer}{Kalray}{Grenoble}{Semiconductor company}
+	\cventry{2015 (5 years)}{Embedded systems software engineer}{Kalray}{Grenoble}{Semiconductor company}
 	{
 	\begin{itemize}
-		\item NoC and DMA bare libraries + Linux drivers
-		\item Linux DMA Engine implementation for K1
-		\item Device tree and Linux FDT library bare mode port for board agnostic executables
-		\item NoC extension protocol tools and libraries for multichip seemless communication
-		\item Hypervisor/OS support
+		\item Linux Ethernet driver for kvx boards:
+		\begin{itemize}
+			\item Phy/MAC/PCS/Ethernet blocks programming for
+				Ethernet communication.
+			\item Auto-negociation and Link Training for plug and
+				play interoperability.
+			\item Receive Side Scaling implementation for packet
+				processing offload.
+		\end{itemize}
+		\item Linux DMA Engine framework implementation for kvx core.
+		\item Linux drivers and bare libraries for Network on Chip
+			communication.
+		\item Device tree and Linux FDT library bare mode port allowing
+			board agnostic executables.
+		\item Hypervisor/Operating System programming.
 	\end{itemize}
 	}
 \cventry{2014 (3 months)}{Engineering intern}{ST Microelectronics}{Grenoble}{Semiconductor company}
 	{Internet energetic autonomous sensors (IoT)
 	\begin{itemize}
-		\item Sensor network initialization protocol
-		\item Nodes states information harvesting
-		\item SDK optimization
+		\item Sensor network initialization protocol.
+		\item Nodes states information harvesting.
+		\item SDK optimization.
 	\end{itemize}
 	}
 
@@ -104,16 +114,16 @@
 %	}
 
 \subsection{Miscellaneous}
-\cventry{Student}{Gardener}{Albanais Home Services}{Moye}{}{Gardening and home services}
+\cventry{Student}{Gardener}{Albanais Home Services}{Moye}{}{Gardening and home services.}
 
 \section{Studies}
 \cventry{2012--2015}{Engineering student}{ENSIMAG}{Superior National School of Applied Mathematics and Computer Science}{}{}  % arguments 3 to 6 can be left empty
 \cventry{2010--2012}{DUT (two-year technical degree) computer science}{IUT d'Annecy}{}{}{}
 
 \section{Skills}
-\cvitem{Low level}{C, assembly (x86, x86\_64, MIPS, K1), linker, emulation}
-\cvitem{Linux}{Kernel and drivers}
-\cvitem{System}{Linux (Debian likes, Red hat likes, Arch), FPGA, Bare}
+\cvitem{Low level}{C, assembly (x86, x86\_64, MIPS, kvx), linker, emulation}
+\cvitem{Linux}{Kernel and drivers programming}
+\cvitem{System}{Linux (Debian derivatives, Redhat derivatives, Arch), FPGA, Bare metal}
 \cvitem{Scripting}{Python, Bash, Vim script}
 \cvitem{Object}{C++, Java}
 \cvitem{Tools}{Git, Make, CMake, LaTex}
@@ -123,9 +133,9 @@
 \cvitem{English}{Fluent}
 
 \section{Hobbies}
-\cvitem{Loisirs}{Music (Mostly Rock/Heavy metal), Video-games}
-\cvitem{Programming}{FOSS}
 \cvitem{Sports}{Hiking, climbing, skiing}
+\cvitem{Programming}{FOSS, Linux enthusiast}
+\cvitem{Misc}{Music (Rock/Heavy metal), Video-games}
 
 \end{document}
 
